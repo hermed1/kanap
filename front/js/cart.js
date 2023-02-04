@@ -50,23 +50,3 @@ function deleteItem() {
     console.log(itemsArray);
   }
 }
-
-// modifier quantité
-// let inputQuantity = document.querySelector(".itemQuantity");
-// inputQuantity.addEventListener("change", () => {
-//   let quantityChosen = inputQuantity.value;
-//   const article = inputQuantity.closest("article");
-//   const item = cart.filter((element) => {element.id === article.dataset.id && element.color === article.dataset.color})
-//   localStorage.setItem("elementAdded", )
-// })
-
-// function deleteItem(id, color) {
-//   let itemsArray = cart;
-//   for (i = 0; i < items.length; i++) {
-//     if (id === itemsArray[i].id && color === itemsArray[i].color) {
-//       itemsArray.splice(i, 1);
-//       localStorage.setItem("elementAdded", JSON.stringify(itemsArray));
-//       window.location.reload();
-//     }
-//   }
-// }
