@@ -6,6 +6,7 @@
 const str = window.location.href;
 const url = new URL(str);
 const id = url.searchParams.get('id');
+//génèrer les produits de l'API
 async function displayProduct() {
   const reponse = await fetch(`http://localhost:3000/api/products/${id}`);
   const canap = await reponse.json();
@@ -89,6 +90,7 @@ const storage = localStorage.getItem('elementAdded');
 if (storage) {
   itemsArray = JSON.parse(storage);
 }
+// remplir le local storage
 function fillStorage() {
   const quantity = parseInt(document.getElementById('quantity').value);
   const color = document.getElementById('colors').value;
